@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+	--corprincipal: #E5E5E5;
+	--corquadro: #FFFFFF;
+	--cortitulo: #0A3871;
+	--corrodape: #D8DFE8;
+}
+
+body {
+	background: var(--corprincipal);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Rubik', sans-serif;
+}
+
+.cabecalho {
+	display: flex;
+	justify-content: space-between;
+	padding: 2%;
+}
+
+.cabecalho h1{
+	color: var(--cortitulo);
+}
+
+.cabecalho img {
+	max-width: 70px;
+	max-height: 70px;
+	width: auto;
+	height: auto;
+}
+
+.container-input {
+	display: flex;
+	justify-content: space-between;
+	padding: 2% 0 0 4%;
+}
+
+.container-input .input {
+	width: 440px;
+	height: 330px;
+}
+
+#inputTexto {
+	width: 345px;
+	height: 420px;
+	font-size: 20px;
+	color: var(--cortitulo);
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	outline: 0;
+	padding: 10px;
+	text-transform: lowercase;
+	resize: none;
+}
+ 
+#imglupa{ 
+ 	margin-top: 20%;
+ 	width: 90%;
+ 	height: auto;
+ 	margin-left: 2%;
+}
+
+#texto {
+	margin-left: 7%;
+	margin-right: 5%;
+}
+
+#texto2 {
+	float: left;
+	margin-left: 10%;
+	color: var(--cortitulo);
+	width: 80%;
+	height: 400%;
+	border: none;
+	outline: none;
+	font-size: 15px;
+	background: transparent;
+	resize: none;
+}
+
+.output {
+	display: flex;
+	flex-direction: column;
+	border: none;
+	border-radius: 32px;
+	width: 350px;
+	height: 450px;
+	margin-right: 3%;
+	background: var(--corquadro);
+}
+
+.output h2 {
+	text-align: center;
+	font-size: 25px;
+	color: var(--cortitulo);
+}
+
+.output img {
+	max-width: 300px;
+	max-height: 300px;
+	width: auto;
+	height: auto;
+	margin-top: 4%;
+}
+
+.container-bnt button {
+	border: 2px solid var(--cortitulo);
+	border-radius: 18px;
+	text-decoration: none;
+	color: #7c0160;
+	width: 150px;
+	height: 50px;
+	margin-left: 4%;
+	cursor: pointer;
+	margin-top: 2%;
+}
+
+#btn-criptografar {
+	background: var(--cortitulo);
+	color: var(--corquadro);
+	width: 328px;
+}
+
+#btn-descriptografar {
+	background: var(--corrodape);
+	color: var(--cortitulo);
+	width: 328px;
+}
+
+#copiar {
+	text-decoration: none;
+	border: 2px solid var(--cortitulo);
+	margin-left: 30%;
+	color: var(--cortitulo);
+	justify-content: center;
+    align-items: center;
+	width: 40%;
+	height: 50%;
+	border-radius: 18px;
+	cursor: pointer;
+	display: none ;
+}
+
+#copiar:hover {
+	background: gray;
+	color: var(--corquadro);
+	border: 2px solid gray;
+	transition: 0.5s all;
+}
+
+#btn-criptografar:hover {
+	background: lightgray;
+	color: var(--cortitulo);
+	border: 2px solid var(--cortitulo);
+	transition: 0.5s all;
+}
+
+#btn-descriptografar:hover {
+	background: gray;
+	color: var(--corquadro);
+	border: 2px solid gray;
+	transition: 0.5s all;
+}
+
+.rodape {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2%;
+	margin-top: 20px;
+	background: var(--corrodape);
+	color: var(--cortitulo);
+}
+
+.rodape {
+	font-size: 16px;
+}
+
+.icon ion-icon {
+	width: 25px;
+	height: 25px;
+	color: var(--cortitulo);
+}
+
+.icon ion-icon:hover {
+	color: var(--corsegundaria);
+}
